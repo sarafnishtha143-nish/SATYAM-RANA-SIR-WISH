@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050507" />
+  <title>For Sir — Happy Teacher's Day | Nishtha Saraf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="world" aria-hidden="true"></canvas>
+  <canvas id="trails" aria-hidden="true"></canvas>
+
+  <div id="loader" class="loader">
+    <p class="loader-title">FOR SIR <span>❤️</span></p>
+    <div class="loader-track" aria-hidden="true"><div class="loader-bar"></div></div>
+    <p class="loader-done">Happy Teacher's Day</p>
+  </div>
+
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+    <span class="cursor-label"></span>
+  </div>
+
+  <nav class="glass-nav" aria-label="Story">
+    <a href="#journey" data-nav="journey">01 Journey</a>
+    <a href="#unknown" data-nav="unknown">02 Unknown</a>
+    <a href="#sir" data-nav="sir">03 Sir</a>
+    <a href="#growth" data-nav="growth">04 Growth</a>
+    <a href="#letter" data-nav="letter">05 Letter</a>
+  </nav>
+
+  <aside class="progress" aria-label="Journey progress">
+    <div class="progress-line"><span class="progress-fill"></span></div>
+    <ol>
+      <li data-step="journey">01 Chhatarpur</li>
+      <li data-step="city">02 New City</li>
+      <li data-step="prime">03 Prime Step</li>
+      <li data-step="unknown">04 Coding</li>
+      <li data-step="low">05 Doubt</li>
+      <li data-step="sir">06 Guidance</li>
+      <li data-step="growth">07 Learning</li>
+      <li data-step="future">08 Growth</li>
+      <li data-step="thanks">09 Thank You</li>
+    </ol>
+  </aside>
+
+  <button class="music-btn" id="musicBtn" type="button" hidden>
+    <span>♫</span> MUSIC
+  </button>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-stage">
+        <div class="portrait-scene" data-cursor="view">
+          <div class="portrait-rig" id="heroRig">
+            <div class="p-layer p-glow"></div>
+            <div class="p-layer p-shadow"></div>
+            <div class="p-layer p-outer"></div>
+            <div class="p-layer p-glass"></div>
+            <div class="p-layer p-photo">
+              <img src="assets/sir.jpg" alt="Sir" data-fallback="sir" />
+            </div>
+            <div class="p-layer p-shine"></div>
+            <div class="p-layer p-reflect"></div>
+            <div class="p-layer p-label">SIR</div>
+          </div>
+          <div class="orbit-ring r1"></div>
+          <div class="orbit-ring r2"></div>
+          <div class="orbit-ring r3"></div>
+        </div>
+
+        <div class="float-field" aria-hidden="true">
+          <span class="glass-chip" data-z="-80">&lt; /&gt;</span>
+          <span class="glass-chip" data-z="60">{ }</span>
+          <span class="glass-chip" data-z="-40">PYTHON</span>
+          <span class="glass-chip" data-z="90">SQL</span>
+          <span class="glass-chip" data-z="-120">DATA</span>
+          <span class="glass-chip" data-z="40">POWER BI</span>
+          <span class="glass-chip" data-z="-30">PANDAS</span>
+          <span class="glass-chip" data-z="110">VS CODE</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">TEACHER'S DAY • 2026</p>
+          <h1 class="cinematic">
+            <span class="line letters">Happy Teacher's Day,</span>
+            <span class="sir-name letters">SIR.</span>
+          </h1>
+          <p class="hero-sub">Some teachers teach you a subject.<br />Some teachers change the way you see your future.</p>
+          <p class="hero-sub dim">This is a little thank-you for everything you taught me.</p>
+          <p class="hand hero-by">Made with gratitude by Nishtha Saraf ❤️</p>
+          <button class="enter-btn magnetic" id="enterBtn" type="button" data-cursor="explore">
+            <span>ENTER MY JOURNEY</span>
+            <em>→</em>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-journey" id="journey" data-chapter="journey">
+      <div class="scene-inner">
+        <p class="scene-index">01</p>
+        <h2 class="depth-heading">
+          <span class="shadow-text" aria-hidden="true">Before Prime Step...</span>
+          <span class="front-text">Before Prime Step...</span>
+        </h2>
+        <p class="story">I came to this city from Chhatarpur,<br />leaving my so-called business and everything<br />familiar behind.</p>
+        <p class="story quiet">I didn't know what was waiting for me.</p>
+
+        <div class="path-3d" id="path3d">
+          <svg class="path-svg" viewBox="0 0 120 520" preserveAspectRatio="none" aria-hidden="true">
+            <path class="path-glow" d="M60 20 C 20 90, 100 150, 60 220 C 20 290, 100 360, 60 500" />
+            <path class="path-draw" d="M60 20 C 20 90, 100 150, 60 220 C 20 290, 100 360, 60 500" />
+          </svg>
+          <article class="path-node" data-cursor="open">
+            <div class="node-core">CHHATARPUR</div>
+            <p>Home. Familiar. Left behind.</p>
+          </article>
+          <article class="path-node" data-cursor="open">
+            <div class="node-core">NEW CITY</div>
+            <p>Unknown streets. A new beginning.</p>
+          </article>
+          <article class="path-node" data-cursor="open">
+            <div class="node-core">PRIME STEP</div>
+            <p>Where the real journey started.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-unknown" id="unknown" data-chapter="unknown">
+      <div class="scene-inner">
+        <p class="scene-index">02</p>
+        <h2 class="depth-heading">
+          <span class="shadow-text" aria-hidden="true">Then I entered a world I knew nothing about.</span>
+          <span class="front-text">Then I entered a world I knew nothing about.</span>
+        </h2>
+
+        <div class="tech-orbit">
+          <span class="tech-obj" data-from="-1">CODING</span>
+          <span class="tech-obj" data-from="1">VS CODE</span>
+          <span class="tech-obj" data-from="-0.6">PYTHON</span>
+          <span class="tech-obj" data-from="0.8">SQL</span>
+          <span class="tech-obj" data-from="-0.3">POWER BI</span>
+          <span class="tech-obj" data-from="1.2">DATA ANALYTICS</span>
+        </div>
+
+        <div class="reveal-stack">
+          <p class="from-dark">I literally didn't know what coding was.</p>
+          <p class="from-dark">I didn't know VS Code.</p>
+          <p class="from-dark">I didn't know Python.</p>
+          <p class="from-dark">I didn't know SQL.</p>
+          <p class="from-dark">I didn't know where to begin.</p>
+        </div>
+
+        <div class="glitch-wrap">
+          <span class="glitch" data-text="UNKNOWN">UNKNOWN</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-sir" id="sir" data-chapter="sir">
+      <div class="scene-inner wide">
+        <p class="scene-index">03</p>
+        <h2 class="quiet-title">Then came you, Sir.</h2>
+        <p class="story">You didn't just teach me coding.</p>
+
+        <div class="virtue-row">
+          <span>GUIDANCE</span>
+          <span>MOTIVATION</span>
+          <span>CORRECTION</span>
+          <span>ENCOURAGEMENT</span>
+          <span>BELIEF</span>
+        </div>
+
+        <div class="cine-portrait" data-cursor="view">
+          <div class="halo"></div>
+          <div class="orbit-ring r-big"></div>
+          <div class="orbit-ring r-mid"></div>
+          <div class="portrait-rig cine-rig" id="cineRig">
+            <div class="p-layer p-glow"></div>
+            <div class="p-layer p-shadow"></div>
+            <div class="p-layer p-outer"></div>
+            <div class="p-layer p-glass"></div>
+            <div class="p-layer p-photo">
+              <img src="assets/sir.jpg" alt="Sir, cinematic portrait" data-fallback="sir" />
+            </div>
+            <div class="p-layer p-shine"></div>
+            <div class="p-layer p-reflect"></div>
+            <div class="p-layer p-label">SIR</div>
+          </div>
+          <div class="orbit-words" aria-hidden="true">
+            <span>GUIDANCE</span>
+            <span>SUPPORT</span>
+            <span>MOTIVATION</span>
+            <span>LEARNING</span>
+            <span>INSPIRATION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-nishtha" id="growth" data-chapter="growth">
+      <div class="scene-inner">
+        <p class="scene-index">04</p>
+        <h2 class="depth-heading">
+          <span class="shadow-text" aria-hidden="true">And this was me...</span>
+          <span class="front-text">And this was me...</span>
+        </h2>
+        <p class="story">A student who started from almost zero.</p>
+
+        <div class="duo">
+          <div class="portrait-scene small student-portrait" data-cursor="view">
+            <div class="portrait-rig" id="nishthaRig">
+              <div class="p-layer p-glow rose"></div>
+              <div class="p-layer p-shadow"></div>
+              <div class="p-layer p-outer"></div>
+              <div class="p-layer p-glass"></div>
+              <div class="p-layer p-photo">
+                <img src="assets/nishtha.jpg" alt="Nishtha Saraf" data-fallback="nishtha" />
+              </div>
+              <div class="p-layer p-shine"></div>
+              <div class="p-layer p-reflect"></div>
+              <div class="p-layer p-label">NISHTHA SARAF</div>
+            </div>
+            <p class="student-tag">THE STUDENT WHO STARTED FROM ZERO</p>
+          </div>
+
+          <div class="bond">
+            <div class="bond-line"></div>
+            <span>GUIDANCE</span>
+            <p>You guided me when I didn't know where to begin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-low" id="low" data-chapter="low">
+      <div class="scene-inner">
+        <p class="scene-index">05</p>
+        <h2>There were moments when I almost gave up.</h2>
+        <p class="huge-line">Maybe I won't be able to do this.</p>
+        <div class="low-lines">
+          <p>Coding was completely new for me.</p>
+          <p>Sometimes I felt lost.</p>
+          <p>Sometimes I felt that maybe Data Analytics wasn't for me.</p>
+          <p>And somewhere in my mind, there was always a possibility...</p>
+          <p>I might leave this city.</p>
+          <p>I might go back to my business.</p>
+        </div>
+        <p class="continued">But I continued.</p>
+      </div>
+    </section>
+
+    <section class="scene scene-more" id="more">
+      <div class="scene-inner">
+        <p class="scene-index">06</p>
+        <h2 class="depth-heading">
+          <span class="shadow-text" aria-hidden="true">More Than A Teacher</span>
+          <span class="front-text">More Than A Teacher</span>
+        </h2>
+        <div class="glass-grid">
+          <article class="tilt-card" data-cursor="open"><h3>GUIDANCE</h3><p>A light when the path was unclear.</p></article>
+          <article class="tilt-card" data-cursor="open"><h3>MOTIVATION</h3><p>A reason to keep going.</p></article>
+          <article class="tilt-card" data-cursor="open"><h3>SKILLS</h3><p>Python, SQL, Power BI — the craft.</p></article>
+          <article class="tilt-card" data-cursor="open"><h3>CREATIVITY</h3><p>Permission to build, not just follow.</p></article>
+          <article class="tilt-card" data-cursor="open"><h3>DISCIPLINE</h3><p>Showing up, even from zero.</p></article>
+          <article class="tilt-card" data-cursor="open"><h3>LEARNING</h3><p>The belief that I can still grow.</p></article>
+        </div>
+        <blockquote class="quote-3d">
+          <p><span>There is still so much left in life</span> <span>to learn, build and achieve.</span></p>
+          <p class="quote-after">If we work hard, we can do so much.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="scene scene-split" id="then-now">
+      <div class="scene-inner">
+        <p class="scene-index">07</p>
+        <h2>Then vs Now</h2>
+        <div class="split-stage">
+          <div class="split then-panel">
+            <h3>THEN</h3>
+            <ul>
+              <li>Non-tech background</li>
+              <li>Didn't know coding</li>
+              <li>Didn't know VS Code</li>
+              <li>Didn't know Python</li>
+              <li>Didn't know where to begin</li>
+              <li>Confused</li>
+            </ul>
+          </div>
+          <div class="split now-panel">
+            <h3>NOW</h3>
+            <ul>
+              <li>Learning Data Analytics</li>
+              <li>Learning Python</li>
+              <li>Learning SQL</li>
+              <li>Exploring Power BI</li>
+              <li>Building projects</li>
+              <li>Creating things</li>
+              <li>Thinking about the future</li>
+            </ul>
+          </div>
+        </div>
+        <p class="meet-line">I still have a lot to learn.</p>
+        <p class="meet-line strong">But now I know that I CAN learn.</p>
+      </div>
+    </section>
+
+    <section class="scene scene-letter" id="letter" data-chapter="letter">
+      <div class="scene-inner">
+        <p class="scene-index">08</p>
+        <h2>One Last Thing, Sir...</h2>
+        <p class="hand letter-meta">Written with gratitude — Nishtha Saraf</p>
+
+        <article class="letter" data-cursor="view">
+          <p class="letter-p">Dear Sir,</p>
+          <p class="letter-p">Some teachers teach us a subject, but some teachers become a part of our journey. You are one of those teachers for me.</p>
+          <p class="letter-p">When I first came to Prime Step Institute, I was completely new to the technical world. I came from a non-tech background and honestly, I didn't even know what coding was, what VS Code was, what Python was, or where to even begin with Data Analytics.</p>
+          <p class="letter-p">But you never made me feel that I didn't belong here.</p>
+          <p class="letter-p">You guided me patiently, corrected my mistakes, motivated me when I felt low, and always pushed me to keep learning.</p>
+          <p class="letter-p">There were times when I genuinely thought that maybe I wouldn't be able to continue with Data Analytics. I had left my business and everything familiar behind in Chhatarpur and started a completely new journey here.</p>
+          <p class="letter-p">If I hadn't found the right guidance at Prime Step, maybe I would have given up and gone back to my old path.</p>
+          <p class="letter-p">But having a teacher like you made a difference.</p>
+          <p class="letter-p">You didn't just teach me Python, SQL, Power BI, or coding.</p>
+          <p class="letter-p">You taught me something much more important:</p>
+          <p class="letter-p highlight">"I can learn something even when I know nothing about it today."</p>
+          <p class="letter-p">Your skills, your websites, your projects, and the way you keep learning yourself inspire me every time.</p>
+          <p class="letter-p">Whenever I see your work, I don't think, "I can never do this."</p>
+          <p class="letter-p">Instead, I think:</p>
+          <p class="letter-p highlight">"There is still so much left for me to learn, build, and achieve in life."</p>
+          <p class="letter-p">And that thought itself is a huge motivation for me.</p>
+          <p class="letter-p">I know I still have a long way to go. I still have a lot to learn, a lot of mistakes to make, and a lot of things to improve.</p>
+          <p class="letter-p">But now I am not afraid of starting from zero.</p>
+          <p class="letter-p">Because somewhere along this journey, you taught me that being a beginner is not a weakness — it is simply the beginning of becoming better.</p>
+          <p class="letter-p">So, Sir, thank you.</p>
+          <p class="letter-p">Thank you for teaching me.<br />Thank you for guiding me.<br />Thank you for motivating me.<br />Thank you for believing in me when I sometimes didn't believe in myself.</p>
+          <p class="letter-p">I feel truly blessed to have had a teacher like you at such an important point in my life.</p>
+          <p class="letter-p">Maybe one day, when I look back at where I started and where I reach, I'll remember that there was a teacher who helped me take those first steps.</p>
+          <p class="letter-p">And I will always be grateful for that.</p>
+          <p class="letter-p">Happy Teacher's Day, Sir. ❤️</p>
+          <p class="letter-p">Thank you for being a teacher who didn't just teach me how to code, but helped me believe that I could build my own future.</p>
+          <p class="letter-p sign">— Nishtha Saraf ❤️</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="scene scene-future" id="future" data-chapter="future">
+      <div class="scene-inner sparse">
+        <p class="scene-index">09</p>
+        <p class="void-line">I don't know exactly where this journey will take me.</p>
+        <p class="void-line">But I know I want to keep going.</p>
+        <p class="void-line">I still have so much to learn.</p>
+        <p class="void-line last">And I will.</p>
+      </div>
+    </section>
+
+    <section class="scene scene-together" id="together">
+      <div class="together-stage">
+        <div class="portrait-scene together-sir" data-cursor="view">
+          <div class="portrait-rig">
+            <div class="p-layer p-glow"></div>
+            <div class="p-layer p-shadow"></div>
+            <div class="p-layer p-outer"></div>
+            <div class="p-layer p-glass"></div>
+            <div class="p-layer p-photo">
+              <img src="assets/sir.jpg" alt="Sir" data-fallback="sir" />
+            </div>
+            <div class="p-layer p-shine"></div>
+            <div class="p-layer p-label">SIR</div>
+          </div>
+        </div>
+        <div class="growth-path">
+          <span>TEACHING</span>
+          <span>LEARNING</span>
+          <span>GROWTH</span>
+        </div>
+        <div class="portrait-scene together-student small" data-cursor="view">
+          <div class="portrait-rig">
+            <div class="p-layer p-glow rose"></div>
+            <div class="p-layer p-shadow"></div>
+            <div class="p-layer p-outer"></div>
+            <div class="p-layer p-glass"></div>
+            <div class="p-layer p-photo">
+              <img src="assets/nishtha.jpg" alt="Nishtha Saraf" data-fallback="nishtha" />
+            </div>
+            <div class="p-layer p-shine"></div>
+            <div class="p-layer p-label">NISHTHA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-final" id="thanks" data-chapter="thanks">
+      <div class="final-stage">
+        <div class="final-portraits">
+          <div class="portrait-scene final-sir" data-cursor="view">
+            <div class="portrait-rig" id="finalRig">
+              <div class="p-layer p-glow"></div>
+              <div class="p-layer p-shadow"></div>
+              <div class="p-layer p-outer"></div>
+              <div class="p-layer p-glass"></div>
+              <div class="p-layer p-photo">
+                <img src="assets/sir.jpg" alt="Sir" data-fallback="sir" />
+              </div>
+              <div class="p-layer p-shine"></div>
+            </div>
+          </div>
+          <div class="portrait-scene final-student small">
+            <div class="portrait-rig">
+              <div class="p-layer p-photo">
+                <img src="assets/nishtha.jpg" alt="Nishtha Saraf" data-fallback="nishtha" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="final-beat">A teacher teaches.</p>
+        <p class="final-beat">A mentor guides.</p>
+        <p class="final-beat">And the right teacher can change the direction of a life.</p>
+        <h2 class="thank-you">THANK YOU, SIR.</h2>
+        <p class="final-beat">Not just for teaching me what to learn...</p>
+        <p class="final-beat">But for showing me that I can learn.</p>
+        <p class="happy">HAPPY TEACHER'S DAY ❤️</p>
+        <p class="hand closer">— Nishtha Saraf</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
